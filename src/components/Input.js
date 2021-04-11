@@ -32,7 +32,6 @@ function Input({
         name={name}
         id={name}
         role={role}
-        isLabelHidden={isLabelHidden}
         autoComplete={autoComplete}
         aria-required={isRequired}
         aria-describedby={describedBy}
@@ -71,7 +70,7 @@ Input.propTypes = {
   role: PropTypes.string,
   isRequired: PropTypes.bool,
   containerClass: PropTypes.string,
-  isLabelHidden: PropTypes.string,
+  isLabelHidden: PropTypes.bool,
   describedBy: PropTypes.string,
   autoComplete: PropTypes.string,
   minLength: PropTypes.number,
