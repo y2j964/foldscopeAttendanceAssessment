@@ -2,6 +2,7 @@
   "name": "foldscope-attendance",
   "version": "0.1.0",
   "private": true,
+	"homepage": "https://y2j964.github.io/foldscopeAttendanceAssessment/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
