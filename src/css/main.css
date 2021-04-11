@@ -1,3 +1,6 @@
 @import "./base/variables.css";
 @import "./base/defaults.css";
 @import "./base/miscellaneous.css";
+@import "../components/AttendanceViewer/attendance-table.css";
+@import "../components/SortToggle/sort-arrow.css";
+@import "../components/Input/form-group.css";

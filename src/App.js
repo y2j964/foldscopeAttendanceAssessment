@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import AttendanceViewer from "./components/AttendanceViewer";
+import AttendanceViewer from "./components/AttendanceViewer/AttendanceViewer";
 import WithLoading from "./components/WithLoading";
-import { InputText } from "./components/Input";
+import { InputText } from "./components/Input/Input";
 import getSortingCompareFunc from "./util/getSortingCompareFunc";
 
 function App() {

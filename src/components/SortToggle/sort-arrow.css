@@ -1,0 +1,19 @@
+.sort-arrow-container {
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
+}
+
+.sort-arrow {
+  opacity: 0.25;
+  transform: rotate(0deg);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+
+  &--is-active {
+    opacity: 1;
+  }
+
+  &--is-descending {
+    transform: rotate(180deg);
+  }
+}

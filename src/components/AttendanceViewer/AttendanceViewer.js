@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import SortToggle from "./SortToggle";
+import SortToggle from "../SortToggle/SortToggle";
 
 function AttendanceViewer({ data, children, sortData }) {
   const [activeSortingCriterion, setActiveSortingCriterion] = useState("name");

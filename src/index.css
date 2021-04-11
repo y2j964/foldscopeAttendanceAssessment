@@ -82,6 +82,44 @@ input[type="reset"] {
   cursor: pointer;
   outline: inherit;
 }
+.mb-8 {
+  margin-bottom: var(--space-8);
+}
+.mt-12 {
+  margin-top: var(--space-12);
+}
+.text-lg {
+  font-size: var(--text-lg);
+}
+.px-2 {
+  padding: var(--space-2);
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.container-sm {
+  margin: 0 auto;
+  max-width: 48rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .header-page {
   text-align: center;
   padding: var(--space-8);
@@ -103,35 +141,22 @@ input[type="reset"] {
     border-bottom: 1px solid #00b0d7;
     min-width: 60px;
   }
-.container-sm {
-  margin: 0 auto;
-  max-width: 48rem;
+.sort-arrow-container {
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
 }
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+.sort-arrow {
+  opacity: 0.25;
+  transform: rotate(0deg);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
-.px-2 {
-  padding: var(--space-2);
-}
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.flex {
-  display: flex;
-}
-.justify-end {
-  justify-content: flex-end;
-}
+.sort-arrow--is-active {
+    opacity: 1;
+  }
+.sort-arrow--is-descending {
+    transform: rotate(180deg);
+  }
 .form-group {
   margin-bottom: var(--space-4);
 }
@@ -151,28 +176,3 @@ input[type="reset"] {
       outline: none;
       border: 1px solid $primary-color;
     }
-.mb-8 {
-  margin-bottom: var(--space-8);
-}
-.mt-12 {
-  margin-top: var(--space-12);
-}
-.text-lg {
-  font-size: var(--text-lg);
-}
-.sort-arrow-container {
-  position: relative;
-  top: 2px;
-  margin-left: 2px;
-}
-.sort-arrow {
-  opacity: 0.25;
-  transform: rotate(0deg);
-  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
-}
-.sort-arrow--is-active {
-    opacity: 1;
-  }
-.sort-arrow--is-descending {
-    transform: rotate(180deg);
-  }

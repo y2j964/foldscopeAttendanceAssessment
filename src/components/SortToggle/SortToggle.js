@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { IconButton } from "./Button/Button";
-import UpArrow from "../icons/UpArrow";
+import { IconButton } from "../Button/Button";
+import UpArrow from "../../icons/UpArrow";
 
 function SortToggle({ isActive, sortingCriterion, handleSort }) {
   const [isAscending, setIsAscending] = useState(true);
