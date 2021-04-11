@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.6335dc20.chunk.css",
-    "main.js": "/static/js/main.a21c5910.chunk.js",
-    "main.js.map": "/static/js/main.a21c5910.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7ae201c0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7ae201c0.js.map",
-    "static/js/2.8faa2449.chunk.js": "/static/js/2.8faa2449.chunk.js",
-    "static/js/2.8faa2449.chunk.js.map": "/static/js/2.8faa2449.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.6335dc20.chunk.css.map": "/static/css/main.6335dc20.chunk.css.map",
-    "static/js/2.8faa2449.chunk.js.LICENSE.txt": "/static/js/2.8faa2449.chunk.js.LICENSE.txt"
+    "main.css": "/foldscopeAttendanceAssessment/static/css/main.6335dc20.chunk.css",
+    "main.js": "/foldscopeAttendanceAssessment/static/js/main.a21c5910.chunk.js",
+    "main.js.map": "/foldscopeAttendanceAssessment/static/js/main.a21c5910.chunk.js.map",
+    "runtime-main.js": "/foldscopeAttendanceAssessment/static/js/runtime-main.5de129d1.js",
+    "runtime-main.js.map": "/foldscopeAttendanceAssessment/static/js/runtime-main.5de129d1.js.map",
+    "static/js/2.8faa2449.chunk.js": "/foldscopeAttendanceAssessment/static/js/2.8faa2449.chunk.js",
+    "static/js/2.8faa2449.chunk.js.map": "/foldscopeAttendanceAssessment/static/js/2.8faa2449.chunk.js.map",
+    "index.html": "/foldscopeAttendanceAssessment/index.html",
+    "static/css/main.6335dc20.chunk.css.map": "/foldscopeAttendanceAssessment/static/css/main.6335dc20.chunk.css.map",
+    "static/js/2.8faa2449.chunk.js.LICENSE.txt": "/foldscopeAttendanceAssessment/static/js/2.8faa2449.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ae201c0.js",
+    "static/js/runtime-main.5de129d1.js",
     "static/js/2.8faa2449.chunk.js",
     "static/css/main.6335dc20.chunk.css",
     "static/js/main.a21c5910.chunk.js"
