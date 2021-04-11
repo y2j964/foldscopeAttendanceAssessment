@@ -28,39 +28,51 @@ function AttendanceViewer({ data, children, sortData }) {
   return (
     <div className="container-sm mb-8">
       {children}
-      <table className="attendance-table">
-        <caption className="sr-only">Attendance tracker</caption>
-        <thead>
-          <tr>
-            <th scope="col" className="attendance-table__heading flex-centered">
-              <span>Name</span>
-              <SortToggle
-                isActive={activeSortingCriterion === "name"}
-                sortingCriterion="name"
-                handleSort={handleSort}
-              />
-            </th>
-            <th scope="col" className="attendance-table__heading flex-centered">
-              <span>Age</span>
-              <SortToggle
-                isActive={activeSortingCriterion === "age"}
-                sortingCriterion="age"
-                handleSort={handleSort}
-              />
-            </th>
-            <th scope="col" className="attendance-table__heading">
-              Address
-            </th>
-            <th scope="col" className="attendance-table__heading">
-              Email
-            </th>
-            <th scope="col" className="attendance-table__heading">
-              Photo
-            </th>
-          </tr>
-        </thead>
-        <tbody>{tableRows}</tbody>
-      </table>
+      {data.length ? (
+        <table className="attendance-table">
+          <caption className="sr-only">Attendance tracker</caption>
+          <thead>
+            <tr>
+              <th
+                scope="col"
+                className="attendance-table__heading flex-centered"
+              >
+                <span>Name</span>
+                <SortToggle
+                  isActive={activeSortingCriterion === "name"}
+                  sortingCriterion="name"
+                  handleSort={handleSort}
+                />
+              </th>
+              <th
+                scope="col"
+                className="attendance-table__heading flex-centered"
+              >
+                <span>Age</span>
+                <SortToggle
+                  isActive={activeSortingCriterion === "age"}
+                  sortingCriterion="age"
+                  handleSort={handleSort}
+                />
+              </th>
+              <th scope="col" className="attendance-table__heading">
+                Address
+              </th>
+              <th scope="col" className="attendance-table__heading">
+                Email
+              </th>
+              <th scope="col" className="attendance-table__heading">
+                Photo
+              </th>
+            </tr>
+          </thead>
+          <tbody>{tableRows}</tbody>
+        </table>
+      ) : (
+        <p className="mt-12 text-lg">
+          No entries matching that text. Try something else.
+        </p>
+      )}
     </div>
   );
 }
