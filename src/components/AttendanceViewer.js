@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import SortToggle from "./SortToggle";
 
-function AttendanceViewer({ data, children }) {
+function AttendanceViewer({ data, children, sortData }) {
+  const [activeSortingCriterion, setActiveSortingCriterion] = useState("name");
+
+  const handleSort = (updatedSortingCriterion, updatedSortIsAscending) => {
+    setActiveSortingCriterion(updatedSortingCriterion);
+    sortData(updatedSortingCriterion, updatedSortIsAscending);
+  };
+
   const tableRows = data.map((kid) => (
     <tr key={kid.login.uuid}>
       <th
@@ -24,11 +32,21 @@ function AttendanceViewer({ data, children }) {
         <caption className="sr-only">Attendance tracker</caption>
         <thead>
           <tr>
-            <th scope="col" className="attendance-table__heading">
-              Name
+            <th scope="col" className="attendance-table__heading flex-centered">
+              <span>Name</span>
+              <SortToggle
+                isActive={activeSortingCriterion === "name"}
+                sortingCriterion="name"
+                handleSort={handleSort}
+              />
             </th>
-            <th scope="col" className="attendance-table__heading">
-              Age
+            <th scope="col" className="attendance-table__heading flex-centered">
+              <span>Age</span>
+              <SortToggle
+                isActive={activeSortingCriterion === "age"}
+                sortingCriterion="age"
+                handleSort={handleSort}
+              />
             </th>
             <th scope="col" className="attendance-table__heading">
               Address
@@ -49,6 +67,7 @@ function AttendanceViewer({ data, children }) {
 
 AttendanceViewer.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  sortData: PropTypes.func.isRequired,
   children: PropTypes.element,
 };
 
