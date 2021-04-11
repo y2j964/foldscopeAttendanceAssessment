@@ -40,7 +40,7 @@ Runs default CRA eject for a more customizable Webpack config.
 
 #### `npm run build`
 
-Builds all JS and CSS.
+Builds all JS and CSS and deploys to GH Pages.
 
 #### `npm run build:js`
 
@@ -49,3 +49,7 @@ Runs default CRA build.
 #### `npm run build:css`
 
 Builds PostCSS and purges unused classes as per postcss.config.js.
+
+#### `npm run deploy`
+
+Deploys app to gh-pages.
