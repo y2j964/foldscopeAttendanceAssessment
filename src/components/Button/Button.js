@@ -8,6 +8,8 @@ function Button({
   tabIndex,
   disabled,
   ariaLabel,
+  ariaPressed,
+  ariaDescribedBy,
   dataTestId,
   children,
 }) {
@@ -20,6 +22,8 @@ function Button({
       disabled={disabled}
       data-testid={dataTestId}
       aria-label={ariaLabel}
+      aria-pressed={ariaPressed}
+      aria-describedby={ariaDescribedBy}
     >
       {children}
     </button>
@@ -33,6 +37,8 @@ Button.propTypes = {
   tabIndex: PropTypes.string,
   disabled: PropTypes.bool,
   ariaLabel: PropTypes.string,
+  ariaPressed: PropTypes.string,
+  ariaDescribedBy: PropTypes.string,
   dataTestId: PropTypes.string,
   children: PropTypes.node,
 };

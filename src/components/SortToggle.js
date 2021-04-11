@@ -16,8 +16,6 @@ function SortToggle({ isActive, sortingCriterion, handleSort }) {
     }
   };
 
-  // controls, active attributes?
-
   const getTransitionClasses = () =>
     `${!isAscending ? "sort-arrow--is-descending" : ""} ${
       isActive ? "sort-arrow--is-active" : ""
@@ -27,7 +25,15 @@ function SortToggle({ isActive, sortingCriterion, handleSort }) {
     <IconButton
       handleClick={handleClick}
       additionalClasses="sort-arrow-container"
+      ariaLabel="toggle sort direction"
+      ariaPressed={`${isActive}`}
+      ariaDescribedBy={`${sortingCriterion}SortDescription`}
     >
+      <span
+        id={`${sortingCriterion}SortDirDesc`}
+        className="sr-only"
+        aria-live="polite"
+      >{`Sort direction is ${isAscending ? "ascending" : "descending"}`}</span>
       <UpArrow additionalClasses={getTransitionClasses()} />
     </IconButton>
   );
