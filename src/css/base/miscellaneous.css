@@ -1,5 +1,29 @@
-.mb-8 {
-  margin-bottom: var(--space-8);
+.container-sm {
+  margin: 0 auto;
+  max-width: 48rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.header-page {
+  text-align: center;
+  padding: var(--space-8);
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.mb-12 {
+  margin-bottom: var(--space-12);
 }
 
 .mt-12 {
@@ -26,26 +50,4 @@
 
 .justify-end {
   justify-content: flex-end;
-}
-
-.container-sm {
-  margin: 0 auto;
-  max-width: 48rem;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.header-page {
-  text-align: center;
-  padding: var(--space-8);
 }

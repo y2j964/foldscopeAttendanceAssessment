@@ -34,7 +34,7 @@ function SortToggle({ isActive, sortingCriterion, handleSort }) {
         className="sr-only"
         aria-live="polite"
       >{`Sort direction is ${isAscending ? "ascending" : "descending"}`}</span>
-      <UpArrow additionalClasses={getTransitionClasses()} />
+      <UpArrow additionalClasses={getTransitionClasses()} fill="#fafffb" />
     </IconButton>
   );
 }

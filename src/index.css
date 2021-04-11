@@ -1,5 +1,7 @@
 :root {
-  --color-primary: #00b0d7;
+  --color-primary: #46c35b;
+  --color-black: #3e423e;
+  --color-white: #fafffb;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -34,6 +36,7 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   max-width: 1140px;
+  background-color: var(--color-white);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -82,8 +85,32 @@ input[type="reset"] {
   cursor: pointer;
   outline: inherit;
 }
-.mb-8 {
-  margin-bottom: var(--space-8);
+p {
+  color: var(--color-black);
+}
+.container-sm {
+  margin: 0 auto;
+  max-width: 48rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.header-page {
+  text-align: center;
+  padding: var(--space-8);
+  color: var(--color-black);
+  font-weight: 600;
+}
+.mb-12 {
+  margin-bottom: var(--space-12);
 }
 .mt-12 {
   margin-top: var(--space-12);
@@ -105,49 +132,34 @@ input[type="reset"] {
 .justify-end {
   justify-content: flex-end;
 }
-.container-sm {
-  margin: 0 auto;
-  max-width: 48rem;
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-.header-page {
-  text-align: center;
-  padding: var(--space-8);
-}
 .attendance-table {
   width: 100%;
   border-collapse: collapse;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 1px 1px -1px rgb(0 0 0 / 20%),
+    0px 0px 1px 0px rgb(0 0 0 / 14%), 0px 0px 3px 0px rgb(0 0 0 / 12%);
 }
 .attendance-table__heading {
-    padding: var(--space-8) var(--space-2);
-    border-bottom: 1px solid #00b0d7;
+    padding: var(--space-4) var(--space-2);
+    background: var(--color-black);
+    color: var(--color-white);
     min-width: 60px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
   }
 .attendance-table__cell {
     padding: var(--space-2);
-    border-bottom: 1px solid #00b0d7;
     min-width: 60px;
+    color: var(--color-black);
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    font-weight: 500;
   }
 .sort-arrow-container {
   position: relative;
-  top: 2px;
+  top: 4px;
   margin-left: 2px;
 }
 .sort-arrow {
-  opacity: 0.25;
+  opacity: 0.5;
   transform: rotate(0deg);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
@@ -166,7 +178,9 @@ input[type="reset"] {
   }
 .form-group__input {
     padding: var(--space-2) var(--space-3);
-    border: 1px solid #00b0d7;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-white);
+    color: var(--color-primary);
     -webkit-appearance: none;
             appearance: none;
     line-height: 1.25;
@@ -175,4 +189,19 @@ input[type="reset"] {
 .form-group__input:focus {
       outline: none;
       border: 1px solid $primary-color;
+    }
+.form-group__input::placeholder {
+      color: var(--color-primary);
+    }
+.form-group__input::-webkit-input-placeholder {
+      color: var(--color-primary);
+    }
+.form-group__input::-moz-placeholder {
+      color: var(--color-primary);
+    }
+.form-group__input::-ms-input-placeholder {
+      color: var(--color-primary);
+    }
+.form-group__input:-moz-placeholder {
+      color: var(--color-primary);
     }

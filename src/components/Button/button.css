@@ -14,7 +14,7 @@
   }
 
   &--inverse {
-    background-color: white;
+    background-color: var(--color-white);
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
     transition: background-color 200ms ease, color 200ms ease;
@@ -26,10 +26,12 @@
   }
 
   &--neutral {
-    @apply w-24 bg-gray-500 text-white;
+    background-color: rgba(107, 114, 128, 1);
+    color: var(--color-white);
   }
 
   &--danger {
-    @apply w-24 bg-red-600 text-white;
+    background-color: rgba(220, 38, 38, 1);
+    color: var(--color-white);
   }
 }

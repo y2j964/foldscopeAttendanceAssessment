@@ -1,11 +1,11 @@
 .sort-arrow-container {
   position: relative;
-  top: 2px;
+  top: 4px;
   margin-left: 2px;
 }
 
 .sort-arrow {
-  opacity: 0.25;
+  opacity: 0.5;
   transform: rotate(0deg);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 

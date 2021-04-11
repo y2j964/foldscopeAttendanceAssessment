@@ -28,7 +28,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill="#3e423e"
           >
             <animate
               attributeName="opacity"
@@ -48,7 +48,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -68,7 +68,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -88,7 +88,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -108,7 +108,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -128,7 +128,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -148,7 +148,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -168,7 +168,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -188,7 +188,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -208,7 +208,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -228,7 +228,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"
@@ -248,7 +248,7 @@ function Spinner() {
             ry="4.8"
             width="6"
             height="12"
-            fill=" #000000"
+            fill=" #3e423e"
           >
             <animate
               attributeName="opacity"

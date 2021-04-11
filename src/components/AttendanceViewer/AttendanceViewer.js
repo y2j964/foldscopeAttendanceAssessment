@@ -11,7 +11,7 @@ function AttendanceViewer({ data, children, sortData }) {
   };
 
   const tableRows = data.map((kid) => (
-    <tr key={kid.login.uuid}>
+    <tr key={kid.login.uuid} className="attendance-table__row">
       <th
         scope="row"
         className="attendance-table__cell"
@@ -26,7 +26,7 @@ function AttendanceViewer({ data, children, sortData }) {
   ));
 
   return (
-    <div className="container-sm mb-8">
+    <div className="container-sm mb-12">
       {children}
       {data.length ? (
         <table className="attendance-table">
